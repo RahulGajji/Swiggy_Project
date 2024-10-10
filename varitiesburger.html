@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiggy</title>
+  <link rel="icon" type="image/icon" href="project2-images/swiggy-icon.jpeg">
+
+
+  <!--addding bootstrap-->
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+   <!--adding css files-->
+  
+  
+   <link rel="stylesheet" href="Project-2(Swiggy).css">
+  
+</head>
+<body>
+
+  <div class="nav-burger-container">
+    <a href="Project-2(Swiggy).html">   <img class="home-nav-image-burger" src="project2-images/corporate-icon.jpg"></a>
+  </div>
+
+  
+
+  <div class="burger-container text-center pt-5">
+    <h1 class="p-heading text-left pl-3">Burger</h1>
+    <p class="p-para text-left pl-3">Satisfy your cravings with these fresh anf flavoursome burgers.</p>
+    <div class="container-fluid">
+      <div class="row burger-code-gen-container ">
+    
+    </div>
+  </div>
+   
+  </div>
+    
+
+
+  
+  
+<script>
+  const burgerrestaurents = [
+
+  {
+
+      burgerrestimage : 'burgerimages/burger-image-1.avif',
+      burgerrestname : 'Ttastry Wings N Burgers',
+      burgerrestpoints : '3.5',
+      burgerrestarrival : '50-55',
+      burgerrestvarities : 'Chinese, Burger',
+      burgerrestlocation : 'Manikonda'
+  },
+
+  {
+      burgerrestimage : 'burgerimages/burger-image-2.avif',
+      burgerrestname : 'Burger King',
+      burgerrestpoints : '4.5',
+      burgerrestarrival : '20-25',
+      burgerrestvarities : 'Burger, American',
+      burgerrestlocation : 'Attapur'
+
+  },
+
+  {
+      burgerrestimage : 'burgerimages/burger-image-3.avif',
+      burgerrestname : 'Sauced Up',
+      burgerrestpoints : '4.3',
+      burgerrestarrival : '45-50',
+      burgerrestvarities : 'American, Fastfood',
+      burgerrestlocation : 'Banhara Hills'
+
+  },
+
+  {
+      burgerrestimage : 'burgerimages/burger-image-4.avif',
+      burgerrestname : 'KFC',
+      burgerrestpoints : '4.1',
+      burgerrestarrival : '35-40',
+      burgerrestvarities : 'Burgers, Rolls, Wraps',
+      burgerrestlocation : 'Inner Ring Road'
+
+  },
+  {
+      burgerrestimage : 'burgerimages/burger-image-5.avif',
+      burgerrestname : 'Pista House Bakery',
+      burgerrestpoints : '4.4',
+      burgerrestarrival : '25-30',
+      burgerrestvarities : 'Burgers, Rolls',
+      burgerrestlocation : 'Panjagutta'
+
+
+  },
+
+  {
+      burgerrestimage : 'burgerimages/burger-image-6.avif',
+      burgerrestname : 'Chapati.com',
+      burgerrestpoints : '4.1',
+      burgerrestarrival : '40-45',
+      burgerrestvarities : 'Burgers',
+      burgerrestlocation : 'Alambagh'
+
+
+  },
+
+  {
+
+      burgerrestimage : 'burgerimages/burger-image-7.avif',
+      burgerrestname : 'Burger It Up',
+      burgerrestpoints : '3.5',
+      burgerrestarrival : '30-35',
+      burgerrestvarities : 'Burgers, Beverages, Desserts',
+      burgerrestlocation : 'Attapur'
+
+  },
+
+  {
+      burgerrestimage : 'burgerimages/burger-image-8.avif',
+      burgerrestname : 'Foodify',
+      burgerrestpoints : '4.3',
+      burgerrestarrival : '45-50',
+      burgerrestvarities : 'French, Pizzas, burgers',
+      burgerrestlocation : 'Mehdipatanam'
+
+
+  },
+
+  {
+      burgerrestimage : 'burgerimages/burger-image-9.avif',
+      burgerrestname : 'BurgerMan',
+      burgerrestpoints : '4.2',
+      burgerrestarrival : '45-50',
+      burgerrestvarities : 'Pizzas, burgers, Snacks',
+      burgerrestlocation : 'Banjara Hills'
+
+  },
+
+
+  {
+      burgerrestimage : 'burgerimages/burger-image-10.avif',
+      burgerrestname : 'The Burger Dudes',
+      burgerrestpoints : '3.2',
+      burgerrestarrival : '35-40',
+      burgerrestvarities : 'burgers, Chinese, Snakc',
+      burgerrestlocation : 'Himayath Nagar'
+
+
+  }
+
+ ]
+
+
+let disphtml2 = '';
+burgerrestaurents.forEach(burgerrestaurent => {
+
+  disphtml2 += `   
+
+       
+
+
+        <div class="col-6 col-md-4 col-lg-3 pt-3 burger-con">
+       
+          <img class="burgerimage" src="${burgerrestaurent.burgerrestimage}">
+         
+            <p class="rest-name text-left">${burgerrestaurent.burgerrestname}</p>
+
+            <div class="rating-burger-container">
+
+                      <div class="rating-burger">
+                    
+                          <img class="rating-icon" src="project2-images/icon.jpeg">
+
+                      </div>
+
+                      <div class="rating-points-burger">
+
+                      ${burgerrestaurent.burgerrestpoints}
+
+                      </div>
+                    
+                      <div class="arrivaltime-container-burger">
+                            &bull; ${burgerrestaurent.burgerrestarrival} mins
+
+                      </div>
+
+
+            </div>
+            <p class="rest-varities text-left">${burgerrestaurent.burgerrestvarities}</p>
+            <p class="rest-location text-left">${burgerrestaurent.burgerrestlocation}</p>
+
+
+        </div>
+
+        
+`;
+  
+              
+
+        
+        document.querySelector('.burger-code-gen-container').innerHTML = disphtml2;
+
+});
+
+
+
+
+
+
+
+
+</script>
+  
+</body>
+</html>

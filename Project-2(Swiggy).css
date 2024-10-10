@@ -1,0 +1,541 @@
+body {
+  margin: 0;
+  
+}
+
+/*navigation container*/
+
+.navigation-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  z-index: 1000;
+  width:100vw;
+  background-color: rgb(255, 255, 255);
+
+
+}
+
+
+.navbar-icon {
+ 
+  height: 50px;
+  padding-left: 40px;
+}
+
+.nav-container {
+  padding-right: 40px;
+}
+ 
+
+.nav-name:hover {
+
+  
+  color: rgb(228, 163, 50) !important;
+ 
+}
+
+.naveach-container {
+ 
+  display: grid;
+  grid-template-columns: 13% 87%;
+  
+}
+
+.naveach-container:hover {
+
+border: 2px solid rgb(228, 163, 50) ;
+
+}
+
+
+
+
+/*mainsection starts here*/
+
+.home-container{
+
+  padding-top: 70px;
+}
+
+
+
+/*carousel-contaier*/
+
+.carousel-container {
+
+
+ padding: 10px;
+
+}
+
+
+
+.carousel-inner {
+
+  border-radius: 20px;
+}
+
+
+.carousel-image {
+
+ height: 30vh;
+ border-radius: 20px;
+
+}
+
+
+/*varities container*/
+
+.varities-container{
+  margin-top: 30px;
+  width: 100%;
+  
+}
+
+
+.varities-section {
+  
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.varity-image {
+  height: 20vh;
+}
+
+.varity-image:hover {
+  cursor: pointer;
+}
+
+.varities-heading {
+
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ font-size: 25px;
+ color: rgb(94, 15, 15);
+ 
+}
+
+.varity-heading-button-container {
+
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+
+.varities-button-container {
+
+  
+  text-align: center;
+  padding-top: 4px;
+  
+}
+
+
+.right-button , .left-button {
+
+ border: 2px solid rgb(171, 167, 167);
+ background-color: white;
+ color: rgb(171, 167, 167);
+ padding:2px 7px;
+ border-radius: 50%;
+
+
+}
+
+
+
+.right-button:focus , .right-button:active , .left-button:focus , .left-button:active{
+
+  outline: none;
+  border: none;
+
+}
+
+
+
+/*spotlight container*/
+
+.spotlight-container {
+
+
+ margin-top:30px ;
+ padding-bottom: 10px;
+}
+
+.spotlight-slider-container {
+
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+ 
+ 
+}
+
+
+.restaurent-container{
+
+ 
+  border-radius: 10px;
+  margin: 10px;
+  padding-right: 10px;
+ 
+}
+
+
+.restaurent-container:hover {
+
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  transform: scale(1.05);
+ 
+
+}
+
+
+.rest-image {
+
+  height: 170px;
+  width: 250px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 5px 5px 4px rgba(227,226,226,0.6);
+}
+
+ 
+.rest-discount {
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-size: 22px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.rating-icon {
+  height: 3vh;
+  border-radius: 50%;
+}
+
+.rating-timearrival-container {
+
+display: grid;
+grid-template-columns: 15% 15% 70%;
+
+}
+
+
+
+
+.rest-information {
+
+ padding: 10px;
+}
+
+
+.rest-name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.rest-varities {
+  margin: 0;
+  color: gray;
+}
+
+.arrivaltime-container {
+
+ color: rgb(74, 74, 74);
+ font-weight: 600;
+
+}
+.rest-location {
+
+  margin: 0; 
+  color: gray;
+}
+
+/*top-restaurents-container*/
+
+
+
+.top-rest-image {
+  height: 170px;
+  width: 100%;
+  border-radius: 10px;
+
+
+ 
+}
+
+
+.online-restaurents-body-container {
+
+  background-color: rgb(170, 51, 226);
+  height: 40vh;
+  padding: 10px;
+  
+ 
+}
+
+.top-restaurent {
+
+  
+  padding: 10px;
+  
+}
+
+.div-image:hover  {
+
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  transform: scale(0.9);
+
+}
+
+
+/*corporate section*/
+
+.nav-corporate-block-1 {
+  background-color: #FE5005;
+  z-index: 900;
+  height: 49vh;
+  
+
+}
+.cop-nav-container{
+ 
+  background-color: #FE5005;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  color: white;
+  z-index: 1000;
+  position: fixed;
+}
+
+.corporate-block-1-icon {
+  
+  background: transparent;
+  height: 50px;
+  
+   
+}
+
+.nav-link:hover {
+  color:rgb(198, 192, 192) !important ;
+}
+
+.navbar-cop {
+  color: white;
+  background-color: #FE5005 !important;
+}
+
+.cop-nav-information-container {
+ z-index: 900;
+ display: grid;
+ grid-template-columns: 30% 40% 30%;
+ justify-content: center;
+ padding-top: 70px;
+
+}
+
+
+
+
+
+.cop-middle-info {
+  
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+
+.cop-right-image {
+  max-height: 250px;
+}
+
+.cop-left-image {
+  max-height: 250px;
+}
+
+
+
+
+.main-section-info-1 {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding: 20px;
+}
+
+.info-1-image {
+  width: 100%;
+  height: 80%;
+}
+.info-2-image {
+  width: 100%;
+  height: 80%;
+}
+
+
+.info-image-1 {
+  padding: 15px;
+ 
+}
+.info-image-1-para {
+  color: grey;
+}
+
+.ratings {
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.rating-heading {
+  color: rgb(27, 153, 27);
+}
+
+.rating-para {
+  color: grey;
+}
+
+.container-last {
+  background-color:rgb(174, 62, 144) ;
+  padding: 20px;
+}
+
+.footer-1 {
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-info-1-name {
+  color:rgb(205, 196, 196) ;
+}
+
+.footer-info-1-name:hover {
+  color:rgb(255, 255, 255) ;
+  cursor: pointer;
+}
+
+.icons-container {
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+}
+
+.icon {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding: 10px;
+}
+
+
+/*signup section starts here*/
+
+.signup-container {
+  height: 100vh;
+  background-size: cover;
+  background-image: url('project2-images/signup\ bg\ image.jpeg');
+  position: relative;
+  text-align: center;
+}
+
+.form-container {
+  padding: 20px;
+  border: 3px solid white;
+  width: 50%;
+  position: absolute;
+  top: 33%;
+  left: 25%;
+  backdrop-filter: blur(3px);
+  border-radius: 5px;
+}
+
+input {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  
+}
+
+
+.signin-button {
+  border: none;
+  background-color: #FE5005;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+.home-bar {
+  background-color: #FE5005;
+  text-align: left;
+}
+
+.signup-heading {
+  color: #FE5005;
+}
+
+
+
+/*burger section starts from here*/
+
+.burger-container {
+  padding: 15px;
+}
+
+
+.burgerimage {
+  width: 100%;
+  height: 30vh;
+  border-radius: 10px;
+}
+
+.rating-burger-container {
+  display: grid;
+  grid-template-columns: 10% 10% 40%;
+  
+}
+
+
+.home-nav-image-burger{
+
+  height: 6vh;
+  margin-bottom: 2px;
+
+}
+
+
+.home-bar-burger {
+  width: 100%;
+ 
+}
+
+.nav-burger-container {
+  height: 7vh;
+  background-color:#FE5005;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+
+.burger-con:hover {
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  transform: scale(0.9);
+}
+
+
+/*pastry section starts from here*/
+
+

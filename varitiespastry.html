@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiggy</title>
+  <link rel="icon" type="image/icon" href="project2-images/swiggy-icon.jpeg">
+
+
+  <!--addding bootstrap-->
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+   <!--adding css files-->
+  
+  
+   <link rel="stylesheet" href="Project-2(Swiggy).css">
+  
+</head>
+<body>
+
+
+  <div class="nav-burger-container">
+    <a href="Project-2(Swiggy).html">   <img class="home-nav-image-burger" src="project2-images/corporate-icon.jpg"></a>
+  </div>
+
+  <div class="pastry-container text-center pt-5">
+    <h1 class="p-heading text-left pl-3">Pastry</h1>
+    <p class="p-para text-left pl-3">Fall in love with these perfect slices of heavenly pastries.</p>
+    <div class="container-fluid ">
+      <div class="row pastry-code-gen-container ">
+    
+    </div>
+  </div>
+   
+  </div>
+
+
+<script>
+
+
+const pastryrestaurents = [
+
+
+{
+
+burgerrestimage : 'pastryimages/pastry-image-1.avif',
+burgerrestname : 'Dadu\'s',
+burgerrestpoints : '4.5',
+burgerrestarrival : '45-50',
+burgerrestvarities : 'Sweets, Desserts, Snacks',
+burgerrestlocation : 'Banjara Hills'
+},
+
+{
+burgerrestimage : 'pastryimages/pastry-image-2.avif',
+burgerrestname : 'KS Bakers',
+burgerrestpoints : '4.2',
+burgerrestarrival : '20-25',
+burgerrestvarities : 'Bakery, Pzzas, Desserts',
+burgerrestlocation : 'Attapur'
+
+},
+
+{
+burgerrestimage : 'pastryimages/pastry-image-3.avif',
+burgerrestname : 'Kwality Walls Dessert',
+burgerrestpoints : '4.5',
+burgerrestarrival : '35-40',
+burgerrestvarities : 'Icecream, Desserts',
+burgerrestlocation : 'Banjara Hills'
+
+},
+
+{
+burgerrestimage : 'pastryimages/pastry-image-4.avif',
+burgerrestname : 'Karachi Bakery',
+burgerrestpoints : '4.3',
+burgerrestarrival : '20-25',
+burgerrestvarities : 'Bakery, Desserts',
+burgerrestlocation : 'Somi Reddy Nagar'
+
+},
+{
+burgerrestimage : 'pastryimages/pastry-image-5.avif',
+burgerrestname : 'MS Bakery',
+burgerrestpoints : '4.3',
+burgerrestarrival : '35-40',
+burgerrestvarities : 'Bakery, Snacks, Beverages',
+burgerrestlocation : 'Attapur'
+
+
+},
+
+{
+burgerrestimage : 'pastryimages/pastry-image-6.avif',
+burgerrestname : 'Fruitoholic Ice Cream',
+burgerrestpoints : '4.5',
+burgerrestarrival : '30-35',
+burgerrestvarities : 'Ice Cream',
+burgerrestlocation : 'Hydershakote'
+
+
+},
+
+{
+
+burgerrestimage : 'pastryimages/pastry-image-7.avif',
+burgerrestname : 'Mysore Bakery',
+burgerrestpoints : '3.9',
+burgerrestarrival : '30-35',
+burgerrestvarities : 'Bakery, Pizzas, Snacks',
+burgerrestlocation : 'Suncity & Bandlaguda'
+
+},
+
+{
+burgerrestimage : 'pastryimages/pastry-image-8.avif',
+burgerrestname : 'Asif Sweets And Bakers',
+burgerrestpoints : '3.5',
+burgerrestarrival : '25-30',
+burgerrestvarities : 'North Indian, Bakery, Snacks',
+burgerrestlocation : 'Mehdipatanam'
+
+
+},
+
+{
+burgerrestimage : 'pastryimages/pastry-image-9.avif',
+burgerrestname : 'Lactonile',
+burgerrestpoints : '3.8',
+burgerrestarrival : '45-50',
+burgerrestvarities : 'Bakery',
+burgerrestlocation : 'Abids'
+
+},
+
+
+{
+burgerrestimage : 'pastryimages/pastry-image-10.avif',
+burgerrestname : 'Cakes Hub Bakery',
+burgerrestpoints : '4.1',
+burgerrestarrival : '30-35',
+burgerrestvarities : 'Bakery, Sweets',
+burgerrestlocation : 'Tolichowki'
+
+
+}
+]
+
+
+
+let disphtml2 = '';
+pastryrestaurents.forEach(pastryrestaurent => {
+
+  disphtml2 += `   
+
+       
+
+
+        <div class="col-6 col-md-4 col-lg-3 pt-3 burger-con">
+       
+          <img class="burgerimage" src="${pastryrestaurent.burgerrestimage}">
+         
+            <p class="rest-name text-left">${pastryrestaurent.burgerrestname}</p>
+
+            <div class="rating-burger-container">
+
+                      <div class="rating-burger">
+                    
+                          <img class="rating-icon" src="project2-images/icon.jpeg">
+
+                      </div>
+
+                      <div class="rating-points-burger">
+
+                      ${pastryrestaurent.burgerrestpoints}
+
+                      </div>
+                    
+                      <div class="arrivaltime-container-burger">
+                            &bull; ${pastryrestaurent.burgerrestarrival} mins
+
+                      </div>
+
+
+            </div>
+            <p class="rest-varities text-left">${pastryrestaurent.burgerrestvarities}</p>
+            <p class="rest-location text-left">${pastryrestaurent.burgerrestlocation}</p>
+
+
+        </div>
+
+        
+`;
+  
+              
+
+        
+        document.querySelector('.pastry-code-gen-container').innerHTML = disphtml2;
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>  
+</body>
+</html>
